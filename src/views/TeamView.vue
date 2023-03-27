@@ -9,15 +9,15 @@ let team = useTeamStore();
 team.fill();
 
 // Example of calling a store action.
-// setTimeout(() => {
-//   team.grow(25);
-// }, 2000);
+setTimeout(() => {
+  team.grow(25);
+}, 2000);
 </script>
 
 <template>
   <TeamHeader />
 
-  <div class="place-self-center flex flex-col gap-y-3" style="width: 725px">
+  <div class="">
     <TeamMembers />
   </div>
 
