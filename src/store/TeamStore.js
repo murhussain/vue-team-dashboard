@@ -12,13 +12,7 @@ export let useTeamStore = defineStore('team', {
   actions: {
     fill() {
       import('@team.json').then(r => {
-        let data = r.default;
-
-        this.$patch({
-          name: data.name,
-          spots: data.spots,
-          members: data.members
-        })
+        this.$state = r.default;
       });
     }
   }
